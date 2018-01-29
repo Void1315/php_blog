@@ -127,7 +127,7 @@
                     var id = obj.getAttribute('data');
                     var htmlobj=$.ajax(
                     {
-                        url:"/blog/public/comment/article/"+id,
+                        url:"{{url('/comment/article')}}/"+id,
                         success:function()
                         {
                             json_data = eval(htmlobj.responseText)
@@ -153,14 +153,14 @@
             }
             function creCom_btn(obj)
             {
-            	if(document.cookie.indexOf("conments" + "=")!=-1)
-            	{
-            		alert("一分钟前已经评论!请稍等后再评论")
-            		return;
-            	}
+            	// if(document.cookie.indexOf("conments" + "=")!=-1)
+            	// {
+            	// 	alert("一分钟前已经评论!请稍等后再评论")
+            	// 	return;
+            	// }
                 var body = $(obj).prev().first()[0].innerText;
                 var id = obj.getAttribute('data');
-                var url = "/blog/public/create/comment/article";
+                var url = "{{url('/create/comment/article')}}";
                 var htmlobj=$.ajax(
                 {
                     url:url,
@@ -172,12 +172,14 @@
 						time.setSeconds(10)
                         viewComments($('#aaa')[0],true);
                         document.cookie="conments=true"+";expires="+time+";HTTP:"+true;
+                        alert(data)
                     },
                     error: function(msg) {
                     var json=JSON.parse(msg.responseText);
                     alert(json)
                     },
                 });
+
             }
 
 
