@@ -1,0 +1,20 @@
+.container-main
+{
+	margin-top: 90px;
+}
+#holder 
+{
+    border: 10px dashed #ccc;
+    max-width: 300px;
+    min-height: 300px;
+    margin: 20px auto;
+	background-position:center;
+}
+#holder.hover 
+{
+	border: 10px dashed #0c0;
+}
+#uploadprogress
+{
+	width: 100%;
+}

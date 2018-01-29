@@ -1,0 +1,62 @@
+.mangword-div
+{
+	
+}
+.mangword-top
+{
+	display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 0 0 3px;
+    margin: 0 0 10px;
+    border-bottom: solid 1px #ddd;
+}
+.mangword-con
+{
+    position: relative;
+    padding: 0 0 6px;
+    outline: 0;
+    margin: 6px 0px 0px;
+    border-bottom: solid 1px #ddd;
+}
+.zg-bull
+{
+    padding: 0 3px;
+    color: #BBB;
+    font-family: Arial;
+}
+.image-li
+{
+    padding-top: 10px;
+    display: block;
+}
+.image-box
+{
+    border-bottom: solid 1px #ddd;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.image-box-right
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.video-box
+{
+    border-bottom: solid 1px #ddd;
+    padding-bottom: 15px;
+
+}
+.video-con
+{
+    display: inline-block;
+    position: relative;
+    top: 0;
+}
+.flex-srud
+{
+    display: flex;
+    justify-content: space-around;;
+}
